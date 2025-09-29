@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(43, 46, 62);
+  width: 100vw;
+  height: 100vh;
+}
+
+.canvas {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.des-ctn {
+  width: 360px;
+  text-align: center;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+.dice-group {
+  width: 360px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+}
+
+.dice {
+  width: 46px;
+  height: 46px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 3px 3px rgba(124, 124, 124, 0.289);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.dice.frozen {
+  background-color: rgb(101, 46, 239);
+  color: aliceblue;
+  box-shadow: none;
+}
+
+.roll-dice-btn {
+  width: 140px;
+  height: 50px;
+  border: 2px solid rgb(101, 46, 239);
+  border-radius: 10px;
+  background-color: rgb(101, 46, 239);
+  box-shadow: 0 3px 6px rgba(63, 28, 153, 0.537);
+  cursor: pointer;
+  margin-top: 16px;
+
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: aliceblue;
+
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.1s;
+
+
+}
+
+.roll-dice-btn:hover {
+  background-color: rgba(101, 46, 239, 0);
+  color: rgb(101, 46, 239);
+}
+
+.roll-dice-btn:active {
+  box-shadow: 0 3px 6px rgba(63, 28, 153, 0);
+
+}
